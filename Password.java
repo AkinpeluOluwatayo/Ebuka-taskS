@@ -29,7 +29,7 @@ public class Password {
 			
 	  System.out.println("Try Again");
 	  }	
-            break;	
+           	
      }
 	
   }
@@ -62,6 +62,7 @@ public class Password {
 
 }
 }
+
 
 
 
