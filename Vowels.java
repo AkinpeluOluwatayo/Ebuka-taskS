@@ -5,7 +5,7 @@ public class Vowels {
         Scanner input = new Scanner(System.in);
 
         System.out.println("Enter word");
-        String word = input.nextLine();
+        String word = input.nextLine().toLowerCase();
 
         int vowelCount = 0;
         int consonantCount = 0;
@@ -14,13 +14,11 @@ public class Vowels {
 
             char characterCheck = word.charAt(index);
 
-            if (characterCheck == 'a' || characterCheck == 'e' || characterCheck == 'i' ||  characterCheck == 'o' || characterCheck == 'u' ||   characterCheck == 'A' || characterCheck == 'E' || characterCheck == 'I' || 
-                characterCheck == 'O' || characterCheck == 'U') {
+            if (characterCheck == 'a' || characterCheck == 'e' || characterCheck == 'i' ||  characterCheck == 'o' || characterCheck == 'u'){ 
                 
                 vowelCount++;
 
-            } else if ((characterCheck >= 'a' && characterCheck <= 'z') || 
-                       (characterCheck >= 'A' && characterCheck <= 'Z')) {
+            } else if ((characterCheck >= 'a' && characterCheck <= 'z'){
                 
                 consonantCount++;
 
@@ -33,4 +31,5 @@ public class Vowels {
         System.out.println("Total vowels: " + vowelCount);
         System.out.println("Total consonants: " + consonantCount);
     }
+
 }
